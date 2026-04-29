@@ -1,0 +1,4 @@
+factory_id,factory_name,city_name,state_code,latitude,longitude,established,monthly_capacity_units,primary_product_line,employees
+FAC-001,Thane Plant,Thane,MH,19.22,72.98,1960,220000,Pressure Cooker - Aluminium,280
+FAC-002,Hoshiarpur Plant,Hoshiarpur,PB,31.53,75.91,1985,165000,Pressure Cooker - Hard Anodised,195
+FAC-003,Sathariya Plant (Jaunpur),Sathariya,UP,25.65,82.55,2010,140000,Pressure Cooker - Stainless Steel + Cookware,175

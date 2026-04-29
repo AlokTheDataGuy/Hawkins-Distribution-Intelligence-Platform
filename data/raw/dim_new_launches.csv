@@ -1,0 +1,32 @@
+launch_id,product_id,product_name,category,launch_date,launch_year,performance,units_sold_year1,marketing_spend_inr
+LCH-900000,HW-PC-10002,Hawkins Classic 2L,Pressure Cooker,2024-03-14,2024,Hit,35879,716415
+LCH-900001,HW-PC-10008,Hawkins Classic 8L,Pressure Cooker,2023-01-01,2023,Hit,28003,748805
+LCH-900002,HW-PC-10012,Hawkins Classic Wide 6.5L,Pressure Cooker,2024-02-01,2024,Underperformer,2178,770901
+LCH-900003,HW-PC-10013,Hawkins Classic Wide 8L,Pressure Cooker,2023-01-15,2023,Underperformer,2150,209610
+LCH-900004,HW-PC-10034,Hawkins Stainless Steel Contura 6.5L,Pressure Cooker,2024-09-16,2024,Average,7481,698105
+LCH-900005,HW-PC-10035,Hawkins Hevibase 3L,Pressure Cooker,2024-02-11,2024,Underperformer,457,88442
+LCH-900006,HW-PC-10036,Hawkins Hevibase 4L,Pressure Cooker,2023-09-25,2023,Underperformer,718,246921
+LCH-900007,HW-PC-10044,Hawkins Stainless Steel 6L,Pressure Cooker,2024-11-19,2024,Hit,35860,248703
+LCH-900008,HW-PC-10051,Hawkins Bigboy 22L,Pressure Cooker,2024-09-22,2024,Underperformer,611,574287
+LCH-900009,HW-PC-10053,Hawkins Instaa 2L,Pressure Cooker,2024-09-02,2024,Hit,29056,504762
+LCH-900010,HW-PC-10054,Hawkins Instaa 3L,Pressure Cooker,2023-09-11,2023,Average,6896,166126
+LCH-900011,HW-PC-10056,Hawkins Ventura 5L,Pressure Cooker,2024-11-04,2024,Hit,21304,167445
+LCH-900012,HW-PC-10063,Hawkins Futura 9L,Pressure Cooker,2023-12-08,2023,Hit,46070,318316
+LCH-900013,HW-PC-10068,Hawkins Miss Mary 1.5L,Pressure Cooker,2023-08-22,2023,Hit,39445,325126
+LCH-900014,HW-PC-10070,Hawkins Miss Mary 3L,Pressure Cooker,2024-12-12,2024,Underperformer,1513,578192
+LCH-900015,HW-PC-10074,Hawkins Miniature Classic 2L,Pressure Cooker,2023-07-03,2023,Average,6453,125963
+LCH-900016,HW-CW-10080,Futura Hard Anodised Tava 25cm,Cookware,2024-06-11,2024,Average,12590,112616
+LCH-900017,HW-CW-10087,Futura Non-Stick Frying Pan 26cm,Cookware,2024-06-24,2024,Hit,23551,313448
+LCH-900018,HW-CW-10089,Futura Hard Anodised Frying Pan 24cm,Cookware,2023-02-26,2023,Underperformer,2775,572797
+LCH-900019,HW-CW-10090,Futura Hard Anodised Frying Pan 26cm,Cookware,2024-09-16,2024,Underperformer,2621,423093
+LCH-900020,HW-CW-10091,Futura Non-Stick Kadhai 24cm,Cookware,2024-01-18,2024,Underperformer,1985,81078
+LCH-900021,HW-CW-10093,Futura Non-Stick Kadhai 28cm,Cookware,2023-01-14,2023,Underperformer,2734,273835
+LCH-900022,HW-CW-10094,Futura Hard Anodised Kadhai 24cm,Cookware,2024-06-14,2024,Underperformer,2960,338988
+LCH-900023,HW-CW-10095,Futura Hard Anodised Kadhai 26cm,Cookware,2024-08-09,2024,Hit,42438,59944
+LCH-900024,HW-CW-10096,Futura Hard Anodised Kadhai 28cm,Cookware,2023-01-11,2023,Underperformer,2544,409001
+LCH-900025,HW-CW-10097,Futura Non-Stick Saucepan 16cm,Cookware,2023-02-22,2023,Underperformer,2144,559386
+LCH-900026,HW-CW-10099,Futura Non-Stick Saucepan 20cm,Cookware,2023-04-13,2023,Average,11154,571012
+LCH-900027,HW-CW-10102,Hawkins Tri-Ply Saucepan 20cm,Cookware,2023-05-05,2023,Average,13943,300416
+LCH-900028,HW-CW-10105,Futura Hard Anodised Deep Fry Pan 24cm,Cookware,2024-08-03,2024,Average,13848,733824
+LCH-900029,HW-EL-10110,Futura Smart Electronic Kettle 1.5L,Electricals,2024-09-20,2024,Underperformer,348,767934
+LCH-900030,HW-EL-10111,Futura Electronic Kettle 1.7L,Electricals,2023-07-26,2023,Hit,28309,238159

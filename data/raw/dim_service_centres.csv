@@ -1,0 +1,141 @@
+centre_id,centre_name,city_id,city_name,state_code,state_name,region,latitude,longitude,monthly_capacity_requests,established_year,is_authorised
+SVC-50001,Hawkins Service Centre - Chennai #3,CITY-1019,Chennai,TN,Tamil Nadu,South,13.104,80.2703,195,2005,True
+SVC-50002,Hawkins Service Centre - Nashik #2,CITY-1003,Nashik,MH,Maharashtra,West,19.9794,73.7935,42,1989,True
+SVC-50003,Hawkins Service Centre - Lucknow #8,CITY-1057,Lucknow,UP,Uttar Pradesh,Central,26.8723,80.9311,205,2007,True
+SVC-50004,Hawkins Service Centre - Patna #5,CITY-1087,Patna,BR,Bihar,East,25.5881,85.14,98,2012,True
+SVC-50005,Hawkins Service Centre - Kozhikode #4,CITY-1053,Kozhikode,KL,Kerala,South,11.2428,75.8079,49,2003,True
+SVC-50006,Hawkins Service Centre - Amritsar #8,CITY-1071,Amritsar,PB,Punjab,North,31.6486,74.8741,82,1988,True
+SVC-50007,Hawkins Service Centre - Hyderabad #1,CITY-1027,Hyderabad,TS,Telangana,South,17.3682,78.5055,248,1995,True
+SVC-50008,Hawkins Service Centre - Jaipur #6,CITY-1045,Jaipur,RJ,Rajasthan,West,26.9181,75.8058,220,1991,True
+SVC-50009,Hawkins Service Centre - Vijayawada #1,CITY-1030,Vijayawada,AP,Andhra Pradesh,South,16.514,80.6357,44,2014,True
+SVC-50010,Hawkins Service Centre - Thane #1,CITY-1004,Thane,MH,Maharashtra,West,19.2181,72.9922,131,2005,True
+SVC-50011,Hawkins Service Centre - Vadodara #3,CITY-1040,Vadodara,GJ,Gujarat,West,22.2817,73.1986,57,2021,True
+SVC-50012,Hawkins Service Centre - Gurugram #8,CITY-1076,Gurugram,HR,Haryana,North,28.4368,77.0408,124,2016,True
+SVC-50013,Hawkins Service Centre - Surat #5,CITY-1039,Surat,GJ,Gujarat,West,21.1557,72.8122,47,1994,True
+SVC-50014,Hawkins Service Centre - Ghaziabad #2,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.664,77.46,148,2012,True
+SVC-50015,Hawkins Service Centre - Hoshiarpur #5,CITY-1073,Hoshiarpur,PB,Punjab,North,31.544,75.9043,96,1993,True
+SVC-50016,Hawkins Service Centre - Vijayawada #1,CITY-1030,Vijayawada,AP,Andhra Pradesh,South,16.5129,80.6524,46,2013,True
+SVC-50017,Hawkins Service Centre - Faridabad #5,CITY-1077,Faridabad,HR,Haryana,North,28.3942,77.32,200,1988,True
+SVC-50018,Hawkins Service Centre - Kolkata #4,CITY-1033,Kolkata,WB,West Bengal,East,22.5625,88.373,203,1992,True
+SVC-50019,Hawkins Service Centre - Coimbatore #5,CITY-1020,Coimbatore,TN,Tamil Nadu,South,11.0106,76.9343,57,2020,True
+SVC-50020,Hawkins Service Centre - Hubli #1,CITY-1016,Hubli,KA,Karnataka,South,15.3788,75.1295,62,2005,True
+SVC-50021,Hawkins Service Centre - Mysore #8,CITY-1014,Mysore,KA,Karnataka,South,12.2703,76.6225,62,2006,True
+SVC-50022,Hawkins Service Centre - Amritsar #7,CITY-1071,Amritsar,PB,Punjab,North,31.6243,74.896,94,2016,True
+SVC-50023,Hawkins Service Centre - Patna #3,CITY-1087,Patna,BR,Bihar,East,25.6137,85.1276,155,1998,True
+SVC-50024,Hawkins Service Centre - Chennai #8,CITY-1019,Chennai,TN,Tamil Nadu,South,13.1042,80.254,225,2018,True
+SVC-50025,Hawkins Service Centre - Nashik #1,CITY-1003,Nashik,MH,Maharashtra,West,20.0263,73.7999,89,2006,True
+SVC-50026,Hawkins Service Centre - Visakhapatnam #5,CITY-1029,Visakhapatnam,AP,Andhra Pradesh,South,17.663,83.2429,37,1994,True
+SVC-50027,Hawkins Service Centre - Ghaziabad #6,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6694,77.4417,82,2017,True
+SVC-50028,Hawkins Service Centre - Howrah #4,CITY-1034,Howrah,WB,West Bengal,East,22.5759,88.2874,48,2008,True
+SVC-50029,Hawkins Service Centre - Lucknow #8,CITY-1057,Lucknow,UP,Uttar Pradesh,Central,26.8586,80.927,220,2004,True
+SVC-50030,Hawkins Service Centre - Jalandhar #8,CITY-1072,Jalandhar,PB,Punjab,North,31.3529,75.595,70,2016,True
+SVC-50031,Hawkins Service Centre - Vadodara #1,CITY-1040,Vadodara,GJ,Gujarat,West,22.332,73.1876,72,2006,True
+SVC-50032,Hawkins Service Centre - Chandigarh City #5,CITY-1118,Chandigarh City,CH,Chandigarh,North,30.7301,76.7852,171,1997,True
+SVC-50033,Hawkins Service Centre - Hyderabad #5,CITY-1027,Hyderabad,TS,Telangana,South,17.3789,78.4792,174,2018,True
+SVC-50034,Hawkins Service Centre - Panaji #4,CITY-1115,Panaji,GA,Goa,West,15.5197,73.8457,84,2003,True
+SVC-50035,Hawkins Service Centre - Mysore #4,CITY-1014,Mysore,KA,Karnataka,South,12.2736,76.648,41,2019,True
+SVC-50036,Hawkins Service Centre - Thane #5,CITY-1004,Thane,MH,Maharashtra,West,19.2376,72.9943,223,1996,True
+SVC-50037,Hawkins Service Centre - Hoshiarpur #1,CITY-1073,Hoshiarpur,PB,Punjab,North,31.513,75.9269,37,1996,True
+SVC-50038,Hawkins Service Centre - Noida #6,CITY-1066,Noida,UP,Uttar Pradesh,Central,28.5486,77.3795,93,1989,True
+SVC-50039,Hawkins Service Centre - Bhopal #1,CITY-1082,Bhopal,MP,Madhya Pradesh,Central,23.2305,77.4037,231,2001,True
+SVC-50040,Hawkins Service Centre - Kolkata #3,CITY-1033,Kolkata,WB,West Bengal,East,22.5954,88.3425,219,2021,True
+SVC-50041,Hawkins Service Centre - Raipur #8,CITY-1097,Raipur,CG,Chhattisgarh,Central,21.2478,81.644,58,2020,True
+SVC-50042,Hawkins Service Centre - Aurangabad #7,CITY-1005,Aurangabad,MH,Maharashtra,West,19.8916,75.3127,95,1991,True
+SVC-50043,Hawkins Service Centre - Pune #3,CITY-1001,Pune,MH,Maharashtra,West,18.5402,73.8778,155,2007,True
+SVC-50044,Hawkins Service Centre - Hyderabad #7,CITY-1027,Hyderabad,TS,Telangana,South,17.366,78.5109,109,2022,True
+SVC-50045,Hawkins Service Centre - Faridabad #6,CITY-1077,Faridabad,HR,Haryana,North,28.4228,77.3077,222,1998,True
+SVC-50046,Hawkins Service Centre - Ghaziabad #2,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6711,77.4595,115,1994,True
+SVC-50047,Hawkins Service Centre - Jaipur #8,CITY-1045,Jaipur,RJ,Rajasthan,West,26.903,75.805,125,2020,True
+SVC-50048,Hawkins Service Centre - Coimbatore #5,CITY-1020,Coimbatore,TN,Tamil Nadu,South,11.0121,76.9434,79,2015,True
+SVC-50049,Hawkins Service Centre - Nagpur #7,CITY-1002,Nagpur,MH,Maharashtra,West,21.1402,79.0756,94,2013,True
+SVC-50050,Hawkins Service Centre - Kolkata #5,CITY-1033,Kolkata,WB,West Bengal,East,22.5506,88.356,82,2003,True
+SVC-50051,Hawkins Service Centre - Jodhpur #4,CITY-1046,Jodhpur,RJ,Rajasthan,West,26.2555,73.0259,57,2023,True
+SVC-50052,Hawkins Service Centre - Noida #6,CITY-1066,Noida,UP,Uttar Pradesh,Central,28.5415,77.3622,146,2009,True
+SVC-50053,Hawkins Service Centre - Ghaziabad #1,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6724,77.4567,90,2001,True
+SVC-50054,Hawkins Service Centre - Dehradun #3,CITY-1111,Dehradun,UK,Uttarakhand,North,30.3366,78.0516,59,2018,True
+SVC-50055,Hawkins Service Centre - Thane #4,CITY-1004,Thane,MH,Maharashtra,West,19.2296,72.9667,111,1990,True
+SVC-50056,Hawkins Service Centre - Kolkata #7,CITY-1033,Kolkata,WB,West Bengal,East,22.5968,88.371,220,2005,True
+SVC-50057,Hawkins Service Centre - Kochi #6,CITY-1051,Kochi,KL,Kerala,South,9.9542,76.257,94,2013,True
+SVC-50058,Hawkins Service Centre - Ghaziabad #5,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6564,77.4645,179,2019,True
+SVC-50059,Hawkins Service Centre - Thiruvananthapuram #6,CITY-1052,Thiruvananthapuram,KL,Kerala,South,8.536,76.9304,101,2020,True
+SVC-50060,Hawkins Service Centre - Ranchi #7,CITY-1094,Ranchi,JH,Jharkhand,East,23.3256,85.3246,73,1985,True
+SVC-50061,Hawkins Service Centre - Allahabad #6,CITY-1061,Allahabad,UP,Uttar Pradesh,Central,25.4507,81.8711,87,2017,True
+SVC-50062,Hawkins Service Centre - Pune #3,CITY-1001,Pune,MH,Maharashtra,West,18.5131,73.8506,233,2009,True
+SVC-50063,Hawkins Service Centre - Thane #7,CITY-1004,Thane,MH,Maharashtra,West,19.2177,72.9995,184,2018,True
+SVC-50064,Hawkins Service Centre - Hoshiarpur #5,CITY-1073,Hoshiarpur,PB,Punjab,North,31.5487,75.8846,88,2003,True
+SVC-50065,Hawkins Service Centre - Ludhiana #5,CITY-1070,Ludhiana,PB,Punjab,North,30.8789,75.8512,203,1991,True
+SVC-50066,Hawkins Service Centre - Dwarka #8,CITY-1011,Dwarka,DL,Delhi,North,28.6079,77.0789,92,2003,True
+SVC-50067,Hawkins Service Centre - Nagpur #1,CITY-1002,Nagpur,MH,Maharashtra,West,21.1317,79.0697,31,1989,True
+SVC-50068,Hawkins Service Centre - Agra #6,CITY-1059,Agra,UP,Uttar Pradesh,Central,27.1802,78.0309,70,2020,True
+SVC-50069,Hawkins Service Centre - Meerut #2,CITY-1064,Meerut,UP,Uttar Pradesh,Central,28.9767,77.7235,56,2020,True
+SVC-50070,Hawkins Service Centre - New Delhi #3,CITY-1010,New Delhi,DL,Delhi,North,28.5841,77.2185,205,1989,True
+SVC-50071,Hawkins Service Centre - Udaipur #2,CITY-1047,Udaipur,RJ,Rajasthan,West,24.5902,73.6997,38,2004,True
+SVC-50072,Hawkins Service Centre - Hyderabad #4,CITY-1027,Hyderabad,TS,Telangana,South,17.3786,78.4937,160,1987,True
+SVC-50073,Hawkins Service Centre - Raipur #5,CITY-1097,Raipur,CG,Chhattisgarh,Central,21.2609,81.6279,59,2008,True
+SVC-50074,Hawkins Service Centre - Hubli #1,CITY-1016,Hubli,KA,Karnataka,South,15.3871,75.1268,73,2020,True
+SVC-50075,Hawkins Service Centre - Amritsar #4,CITY-1071,Amritsar,PB,Punjab,North,31.6134,74.8565,67,2006,True
+SVC-50076,Hawkins Service Centre - Lucknow #5,CITY-1057,Lucknow,UP,Uttar Pradesh,Central,26.8345,80.9459,167,2006,True
+SVC-50077,Hawkins Service Centre - Mumbai #1,CITY-1000,Mumbai,MH,Maharashtra,West,19.097,72.8611,178,1990,True
+SVC-50078,Hawkins Service Centre - Kozhikode #1,CITY-1053,Kozhikode,KL,Kerala,South,11.262,75.8006,82,2023,True
+SVC-50079,Hawkins Service Centre - Thane #6,CITY-1004,Thane,MH,Maharashtra,West,19.2374,73.0072,133,1998,True
+SVC-50080,Hawkins Service Centre - Ghaziabad #3,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6524,77.4668,156,2023,True
+SVC-50081,Hawkins Service Centre - Kanpur #3,CITY-1058,Kanpur,UP,Uttar Pradesh,Central,26.44,80.3017,50,2011,True
+SVC-50082,Hawkins Service Centre - Mumbai #6,CITY-1000,Mumbai,MH,Maharashtra,West,19.0791,72.8586,249,2017,True
+SVC-50083,Hawkins Service Centre - Mangalore #2,CITY-1015,Mangalore,KA,Karnataka,South,12.906,74.8657,64,2011,True
+SVC-50084,Hawkins Service Centre - Gurugram #1,CITY-1076,Gurugram,HR,Haryana,North,28.4626,77.0053,135,2004,True
+SVC-50085,Hawkins Service Centre - Madurai #2,CITY-1021,Madurai,TN,Tamil Nadu,South,9.9415,78.1434,37,1986,True
+SVC-50086,Hawkins Service Centre - Thiruvananthapuram #8,CITY-1052,Thiruvananthapuram,KL,Kerala,South,8.5066,76.9487,155,1995,True
+SVC-50087,Hawkins Service Centre - Visakhapatnam #2,CITY-1029,Visakhapatnam,AP,Andhra Pradesh,South,17.6853,83.2052,43,1988,True
+SVC-50088,Hawkins Service Centre - Jamshedpur #8,CITY-1095,Jamshedpur,JH,Jharkhand,East,22.7922,86.1828,40,1986,True
+SVC-50089,Hawkins Service Centre - Lucknow #5,CITY-1057,Lucknow,UP,Uttar Pradesh,Central,26.8545,80.9738,219,2020,True
+SVC-50090,Hawkins Service Centre - Noida #6,CITY-1066,Noida,UP,Uttar Pradesh,Central,28.5176,77.3734,202,2010,True
+SVC-50091,Hawkins Service Centre - Nashik #8,CITY-1003,Nashik,MH,Maharashtra,West,20.0281,73.7903,41,1988,True
+SVC-50092,Hawkins Service Centre - Pune #7,CITY-1001,Pune,MH,Maharashtra,West,18.5271,73.8723,221,2010,True
+SVC-50093,Hawkins Service Centre - Coimbatore #7,CITY-1020,Coimbatore,TN,Tamil Nadu,South,10.994,76.9612,78,1987,True
+SVC-50094,Hawkins Service Centre - Hyderabad #5,CITY-1027,Hyderabad,TS,Telangana,South,17.3925,78.5144,104,1985,True
+SVC-50095,Hawkins Service Centre - Noida #2,CITY-1066,Noida,UP,Uttar Pradesh,Central,28.525,77.4165,214,2007,True
+SVC-50096,Hawkins Service Centre - Kanpur #3,CITY-1058,Kanpur,UP,Uttar Pradesh,Central,26.4588,80.3522,42,1997,True
+SVC-50097,Hawkins Service Centre - Ahmedabad #5,CITY-1038,Ahmedabad,GJ,Gujarat,West,23.0489,72.5811,219,1992,True
+SVC-50098,Hawkins Service Centre - Ghaziabad #3,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6805,77.4346,103,1988,True
+SVC-50099,Hawkins Service Centre - Rohini #8,CITY-1012,Rohini,DL,Delhi,North,28.757,77.0496,94,2020,True
+SVC-50100,Hawkins Service Centre - Nagpur #7,CITY-1002,Nagpur,MH,Maharashtra,West,21.1457,79.0765,63,1996,True
+SVC-50101,Hawkins Service Centre - Gwalior #8,CITY-1084,Gwalior,MP,Madhya Pradesh,Central,26.248,78.1938,91,2008,True
+SVC-50102,Hawkins Service Centre - Kanpur #7,CITY-1058,Kanpur,UP,Uttar Pradesh,Central,26.4559,80.3014,79,2003,True
+SVC-50103,Hawkins Service Centre - Ghaziabad #7,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6608,77.4619,181,2020,True
+SVC-50104,Hawkins Service Centre - Hyderabad #7,CITY-1027,Hyderabad,TS,Telangana,South,17.3697,78.4967,156,2002,True
+SVC-50105,Hawkins Service Centre - Ahmedabad #6,CITY-1038,Ahmedabad,GJ,Gujarat,West,22.995,72.5403,225,2007,True
+SVC-50106,Hawkins Service Centre - Nashik #5,CITY-1003,Nashik,MH,Maharashtra,West,19.9899,73.8102,75,2008,True
+SVC-50107,Hawkins Service Centre - Gwalior #5,CITY-1084,Gwalior,MP,Madhya Pradesh,Central,26.2341,78.2064,79,2006,True
+SVC-50108,Hawkins Service Centre - Varanasi #1,CITY-1060,Varanasi,UP,Uttar Pradesh,Central,25.3208,82.9753,67,1998,True
+SVC-50109,Hawkins Service Centre - Nashik #7,CITY-1003,Nashik,MH,Maharashtra,West,20.0087,73.7947,65,2023,True
+SVC-50110,Hawkins Service Centre - Bhopal #7,CITY-1082,Bhopal,MP,Madhya Pradesh,Central,23.2703,77.4095,141,2002,True
+SVC-50111,Hawkins Service Centre - Jaipur #5,CITY-1045,Jaipur,RJ,Rajasthan,West,26.9088,75.7608,158,2019,True
+SVC-50112,Hawkins Service Centre - Gurugram #7,CITY-1076,Gurugram,HR,Haryana,North,28.4428,77.049,136,2022,True
+SVC-50113,Hawkins Service Centre - Mumbai #2,CITY-1000,Mumbai,MH,Maharashtra,West,19.0793,72.8595,246,1995,True
+SVC-50114,Hawkins Service Centre - Mumbai #3,CITY-1000,Mumbai,MH,Maharashtra,West,19.0695,72.8713,244,1997,True
+SVC-50115,Hawkins Service Centre - Bangalore #8,CITY-1013,Bangalore,KA,Karnataka,South,12.9452,77.5785,86,2010,True
+SVC-50116,Hawkins Service Centre - Mangalore #6,CITY-1015,Mangalore,KA,Karnataka,South,12.9144,74.8417,38,1995,True
+SVC-50117,Hawkins Service Centre - Gurugram #1,CITY-1076,Gurugram,HR,Haryana,North,28.4633,77.0003,146,2000,True
+SVC-50118,Hawkins Service Centre - Noida #4,CITY-1066,Noida,UP,Uttar Pradesh,Central,28.5278,77.4063,95,1999,True
+SVC-50119,Hawkins Service Centre - Allahabad #2,CITY-1061,Allahabad,UP,Uttar Pradesh,Central,25.4608,81.8745,35,1987,True
+SVC-50120,Hawkins Service Centre - Patna #4,CITY-1087,Patna,BR,Bihar,East,25.5846,85.1665,168,2012,True
+SVC-50121,Hawkins Service Centre - Chennai #3,CITY-1019,Chennai,TN,Tamil Nadu,South,13.0619,80.2784,111,2007,True
+SVC-50122,Hawkins Service Centre - Bhubaneswar #2,CITY-1091,Bhubaneswar,OD,Odisha,East,20.2977,85.8013,95,2013,True
+SVC-50123,Hawkins Service Centre - Ranchi #4,CITY-1094,Ranchi,JH,Jharkhand,East,23.3255,85.3341,92,1999,True
+SVC-50124,Hawkins Service Centre - Jaipur #8,CITY-1045,Jaipur,RJ,Rajasthan,West,26.883,75.8129,214,2021,True
+SVC-50125,Hawkins Service Centre - Thane #8,CITY-1004,Thane,MH,Maharashtra,West,19.1985,72.989,138,2022,True
+SVC-50126,Hawkins Service Centre - Ludhiana #7,CITY-1070,Ludhiana,PB,Punjab,North,30.8944,75.8315,158,2005,True
+SVC-50127,Hawkins Service Centre - Kolkata #1,CITY-1033,Kolkata,WB,West Bengal,East,22.5701,88.3449,163,2007,True
+SVC-50128,Hawkins Service Centre - Faridabad #3,CITY-1077,Faridabad,HR,Haryana,North,28.4015,77.3429,170,1992,True
+SVC-50129,Hawkins Service Centre - Rohini #6,CITY-1012,Rohini,DL,Delhi,North,28.71,77.0919,91,1996,True
+SVC-50130,Hawkins Service Centre - Lucknow #3,CITY-1057,Lucknow,UP,Uttar Pradesh,Central,26.8348,80.9445,81,2018,True
+SVC-50131,Hawkins Service Centre - Kozhikode #7,CITY-1053,Kozhikode,KL,Kerala,South,11.2258,75.7734,42,2021,True
+SVC-50132,Hawkins Service Centre - Thane #5,CITY-1004,Thane,MH,Maharashtra,West,19.1936,72.9636,108,1989,True
+SVC-50133,Hawkins Service Centre - Howrah #8,CITY-1034,Howrah,WB,West Bengal,East,22.6082,88.2532,81,1986,True
+SVC-50134,Hawkins Service Centre - Nashik #5,CITY-1003,Nashik,MH,Maharashtra,West,19.9748,73.8056,64,2012,True
+SVC-50135,Hawkins Service Centre - Jodhpur #4,CITY-1046,Jodhpur,RJ,Rajasthan,West,26.2509,72.9981,61,2011,True
+SVC-50136,Hawkins Service Centre - Indore #4,CITY-1083,Indore,MP,Madhya Pradesh,Central,22.7333,75.8527,116,2007,True
+SVC-50137,Hawkins Service Centre - Madurai #5,CITY-1021,Madurai,TN,Tamil Nadu,South,9.9591,78.0938,43,2011,True
+SVC-50138,Hawkins Service Centre - Gurugram #5,CITY-1076,Gurugram,HR,Haryana,North,28.4552,77.0073,103,1988,True
+SVC-50139,Hawkins Service Centre - Bangalore #6,CITY-1013,Bangalore,KA,Karnataka,South,12.9961,77.5807,112,1988,True
+SVC-50140,Hawkins Service Centre - Ghaziabad #5,CITY-1065,Ghaziabad,UP,Uttar Pradesh,Central,28.6478,77.4201,99,1995,True

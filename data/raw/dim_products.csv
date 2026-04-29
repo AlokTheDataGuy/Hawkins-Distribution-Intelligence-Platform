@@ -1,0 +1,124 @@
+product_id,product_name,category,sub_category,material,tier,size_litres,is_induction,unit_price,popularity_index,warranty_years,launch_year
+HW-PC-10001,Hawkins Classic 1.5L,Pressure Cooker,Classic,Aluminium,Standard,1.5,False,1020.0,1.0,5,2020
+HW-PC-10002,Hawkins Classic 2L,Pressure Cooker,Classic,Aluminium,Standard,2.0,False,1090.0,1.0,5,2024
+HW-PC-10003,Hawkins Classic 3L,Pressure Cooker,Classic,Aluminium,Standard,3.0,False,1230.0,1.0,5,2022
+HW-PC-10004,Hawkins Classic 3.5L,Pressure Cooker,Classic,Aluminium,Standard,3.5,False,1310.0,1.0,5,2020
+HW-PC-10005,Hawkins Classic 4L,Pressure Cooker,Classic,Aluminium,Standard,4.0,False,1380.0,1.0,5,2018
+HW-PC-10006,Hawkins Classic 5L,Pressure Cooker,Classic,Aluminium,Standard,5.0,False,1520.0,1.0,5,2018
+HW-PC-10007,Hawkins Classic 6.5L,Pressure Cooker,Classic,Aluminium,Standard,6.5,False,1740.0,1.0,5,2015
+HW-PC-10008,Hawkins Classic 8L,Pressure Cooker,Classic,Aluminium,Standard,8.0,False,1960.0,1.0,5,2023
+HW-PC-10009,Hawkins Classic 10L,Pressure Cooker,Classic,Aluminium,Standard,10.0,False,2250.0,1.0,5,2022
+HW-PC-10010,Hawkins Classic 12L,Pressure Cooker,Classic,Aluminium,Standard,12.0,False,2540.0,1.0,5,2022
+HW-PC-10011,Hawkins Classic Wide 5L,Pressure Cooker,Classic Wide,Aluminium,Standard,5.0,False,2140.0,0.55,5,2015
+HW-PC-10012,Hawkins Classic Wide 6.5L,Pressure Cooker,Classic Wide,Aluminium,Standard,6.5,False,2440.0,0.55,5,2024
+HW-PC-10013,Hawkins Classic Wide 8L,Pressure Cooker,Classic Wide,Aluminium,Standard,8.0,False,2750.0,0.55,5,2023
+HW-PC-10014,Hawkins Classic Wide 10L,Pressure Cooker,Classic Wide,Aluminium,Standard,10.0,False,3150.0,0.55,5,2018
+HW-PC-10015,Hawkins Contura 1.5L,Pressure Cooker,Contura,Aluminium,Premium,1.5,False,1550.0,0.85,5,2018
+HW-PC-10016,Hawkins Contura 2L,Pressure Cooker,Contura,Aluminium,Premium,2.0,False,1660.0,0.85,5,2018
+HW-PC-10017,Hawkins Contura 3L,Pressure Cooker,Contura,Aluminium,Premium,3.0,False,1890.0,0.85,5,2018
+HW-PC-10018,Hawkins Contura 3.5L,Pressure Cooker,Contura,Aluminium,Premium,3.5,False,2000.0,0.85,5,2020
+HW-PC-10019,Hawkins Contura 4L,Pressure Cooker,Contura,Aluminium,Premium,4.0,False,2110.0,0.85,5,2020
+HW-PC-10020,Hawkins Contura 5L,Pressure Cooker,Contura,Aluminium,Premium,5.0,False,2330.0,0.85,5,2018
+HW-PC-10021,Hawkins Contura 6.5L,Pressure Cooker,Contura,Aluminium,Premium,6.5,False,2660.0,0.85,5,2022
+HW-PC-10022,Hawkins Contura Black 3L,Pressure Cooker,Contura Black,Hard Anodised,Premium,3.0,False,2750.0,0.7,5,2015
+HW-PC-10023,Hawkins Contura Black 3.5L,Pressure Cooker,Contura Black,Hard Anodised,Premium,3.5,False,2920.0,0.7,5,2018
+HW-PC-10024,Hawkins Contura Black 4L,Pressure Cooker,Contura Black,Hard Anodised,Premium,4.0,False,3080.0,0.7,5,2020
+HW-PC-10025,Hawkins Contura Black 5L,Pressure Cooker,Contura Black,Hard Anodised,Premium,5.0,False,3400.0,0.7,5,2020
+HW-PC-10026,Hawkins Contura Black 6.5L,Pressure Cooker,Contura Black,Hard Anodised,Premium,6.5,False,3890.0,0.7,5,2022
+HW-PC-10027,Hawkins Contura Black XT 3L,Pressure Cooker,Contura Black XT,Hard Anodised,Premium,3.0,True,3570.0,0.55,5,2018
+HW-PC-10028,Hawkins Contura Black XT 4L,Pressure Cooker,Contura Black XT,Hard Anodised,Premium,4.0,True,3990.0,0.55,5,2020
+HW-PC-10029,Hawkins Contura Black XT 5L,Pressure Cooker,Contura Black XT,Hard Anodised,Premium,5.0,True,4420.0,0.55,5,2020
+HW-PC-10030,Hawkins Contura Black XT 6.5L,Pressure Cooker,Contura Black XT,Hard Anodised,Premium,6.5,True,5050.0,0.55,5,2015
+HW-PC-10031,Hawkins Stainless Steel Contura 3L,Pressure Cooker,Stainless Steel Contura,Stainless Steel,Premium,3.0,True,4480.0,0.45,5,2022
+HW-PC-10032,Hawkins Stainless Steel Contura 4L,Pressure Cooker,Stainless Steel Contura,Stainless Steel,Premium,4.0,True,5010.0,0.45,5,2018
+HW-PC-10033,Hawkins Stainless Steel Contura 5L,Pressure Cooker,Stainless Steel Contura,Stainless Steel,Premium,5.0,True,5530.0,0.45,5,2015
+HW-PC-10034,Hawkins Stainless Steel Contura 6.5L,Pressure Cooker,Stainless Steel Contura,Stainless Steel,Premium,6.5,True,6320.0,0.45,5,2024
+HW-PC-10035,Hawkins Hevibase 3L,Pressure Cooker,Hevibase,Aluminium,Standard,3.0,False,1640.0,0.5,5,2024
+HW-PC-10036,Hawkins Hevibase 4L,Pressure Cooker,Hevibase,Aluminium,Standard,4.0,False,1830.0,0.5,5,2023
+HW-PC-10037,Hawkins Hevibase 5L,Pressure Cooker,Hevibase,Aluminium,Standard,5.0,False,2020.0,0.5,5,2018
+HW-PC-10038,Hawkins Hevibase 6.5L,Pressure Cooker,Hevibase,Aluminium,Standard,6.5,False,2310.0,0.5,5,2015
+HW-PC-10039,Hawkins Hevibase 8L,Pressure Cooker,Hevibase,Aluminium,Standard,8.0,False,2600.0,0.5,5,2022
+HW-PC-10040,Hawkins Stainless Steel 2L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,2.0,True,3720.0,0.65,5,2020
+HW-PC-10041,Hawkins Stainless Steel 3L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,3.0,True,4220.0,0.65,5,2015
+HW-PC-10042,Hawkins Stainless Steel 4L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,4.0,True,4710.0,0.65,5,2020
+HW-PC-10043,Hawkins Stainless Steel 5L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,5.0,True,5210.0,0.65,5,2015
+HW-PC-10044,Hawkins Stainless Steel 6L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,6.0,True,5700.0,0.65,5,2024
+HW-PC-10045,Hawkins Stainless Steel 8L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,8.0,True,6700.0,0.65,5,2018
+HW-PC-10046,Hawkins Stainless Steel 10L,Pressure Cooker,Stainless Steel,Stainless Steel,Premium,10.0,True,7690.0,0.65,5,2022
+HW-PC-10047,Hawkins Tri-Ply Stainless Steel 3L,Pressure Cooker,Tri-Ply Stainless Steel,Stainless Steel,Luxury,3.0,True,7340.0,0.3,5,2018
+HW-PC-10048,Hawkins Tri-Ply Stainless Steel 5L,Pressure Cooker,Tri-Ply Stainless Steel,Stainless Steel,Luxury,5.0,True,9070.0,0.3,5,2020
+HW-PC-10049,Hawkins Bigboy 14L,Pressure Cooker,Bigboy,Aluminium,Commercial,14.0,False,11470.0,0.2,5,2020
+HW-PC-10050,Hawkins Bigboy 18L,Pressure Cooker,Bigboy,Aluminium,Commercial,18.0,False,13820.0,0.2,5,2018
+HW-PC-10051,Hawkins Bigboy 22L,Pressure Cooker,Bigboy,Aluminium,Commercial,22.0,False,16170.0,0.2,5,2024
+HW-PC-10052,Hawkins Instaa 1.5L,Pressure Cooker,Instaa,Aluminium,Standard,1.5,False,1210.0,0.4,5,2022
+HW-PC-10053,Hawkins Instaa 2L,Pressure Cooker,Instaa,Aluminium,Standard,2.0,False,1300.0,0.4,5,2024
+HW-PC-10054,Hawkins Instaa 3L,Pressure Cooker,Instaa,Aluminium,Standard,3.0,False,1470.0,0.4,5,2023
+HW-PC-10055,Hawkins Ventura 3L,Pressure Cooker,Ventura,Hard Anodised,Premium,3.0,False,2340.0,0.35,5,2020
+HW-PC-10056,Hawkins Ventura 5L,Pressure Cooker,Ventura,Hard Anodised,Premium,5.0,False,2890.0,0.35,5,2024
+HW-PC-10057,Hawkins Futura 2L,Pressure Cooker,Futura,Hard Anodised,Premium,2.0,False,2630.0,0.75,5,2015
+HW-PC-10058,Hawkins Futura 3L,Pressure Cooker,Futura,Hard Anodised,Premium,3.0,False,2980.0,0.75,5,2018
+HW-PC-10059,Hawkins Futura 4L,Pressure Cooker,Futura,Hard Anodised,Premium,4.0,False,3330.0,0.75,5,2015
+HW-PC-10060,Hawkins Futura 5L,Pressure Cooker,Futura,Hard Anodised,Premium,5.0,False,3690.0,0.75,5,2018
+HW-PC-10061,Hawkins Futura 6L,Pressure Cooker,Futura,Hard Anodised,Premium,6.0,False,4040.0,0.75,5,2020
+HW-PC-10062,Hawkins Futura 7L,Pressure Cooker,Futura,Hard Anodised,Premium,7.0,False,4390.0,0.75,5,2018
+HW-PC-10063,Hawkins Futura 9L,Pressure Cooker,Futura,Hard Anodised,Premium,9.0,False,5090.0,0.75,5,2023
+HW-PC-10064,Hawkins Futura Stainless Steel 3L,Pressure Cooker,Futura Stainless Steel,Stainless Steel,Premium,3.0,True,5170.0,0.5,5,2020
+HW-PC-10065,Hawkins Futura Stainless Steel 4L,Pressure Cooker,Futura Stainless Steel,Stainless Steel,Premium,4.0,True,5780.0,0.5,5,2018
+HW-PC-10066,Hawkins Futura Stainless Steel 5.5L,Pressure Cooker,Futura Stainless Steel,Stainless Steel,Premium,5.5,True,6690.0,0.5,5,2020
+HW-PC-10067,Hawkins Futura Stainless Steel 7L,Pressure Cooker,Futura Stainless Steel,Stainless Steel,Premium,7.0,True,7600.0,0.5,5,2015
+HW-PC-10068,Hawkins Miss Mary 1.5L,Pressure Cooker,Miss Mary,Aluminium,Economy,1.5,False,790.0,0.65,5,2023
+HW-PC-10069,Hawkins Miss Mary 2L,Pressure Cooker,Miss Mary,Aluminium,Economy,2.0,False,840.0,0.65,5,2015
+HW-PC-10070,Hawkins Miss Mary 3L,Pressure Cooker,Miss Mary,Aluminium,Economy,3.0,False,960.0,0.65,5,2024
+HW-PC-10071,Hawkins Miss Mary 3.5L,Pressure Cooker,Miss Mary,Aluminium,Economy,3.5,False,1010.0,0.65,5,2022
+HW-PC-10072,Hawkins Miss Mary 5L,Pressure Cooker,Miss Mary,Aluminium,Economy,5.0,False,1180.0,0.65,5,2018
+HW-PC-10073,Hawkins Miniature Classic 1.5L,Pressure Cooker,Miniature Classic,Aluminium,Economy,1.5,False,530.0,0.25,5,2015
+HW-PC-10074,Hawkins Miniature Classic 2L,Pressure Cooker,Miniature Classic,Aluminium,Economy,2.0,False,570.0,0.25,5,2023
+HW-CW-10075,Futura Non-Stick Tava 22cm,Cookware,Tava,Non-Stick,Standard,,False,550.0,0.5327429375390469,2,2022
+HW-CW-10076,Futura Non-Stick Tava 25cm,Cookware,Tava,Non-Stick,Standard,,False,790.0,0.5660702162124822,2,2022
+HW-CW-10077,Futura Non-Stick Tava 28cm,Cookware,Tava,Non-Stick,Standard,,False,1030.0,0.27961786069363614,2,2020
+HW-CW-10078,Futura Non-Stick Tava 30cm,Cookware,Tava,Non-Stick,Standard,,False,1190.0,0.29634762381005186,2,2018
+HW-CW-10079,Futura Hard Anodised Tava 22cm,Cookware,Tava,Hard Anodised,Premium,,True,750.0,0.4993192507310232,2,2020
+HW-CW-10080,Futura Hard Anodised Tava 25cm,Cookware,Tava,Hard Anodised,Premium,,True,990.0,0.2881640465961645,2,2024
+HW-CW-10081,Futura Hard Anodised Tava 28cm,Cookware,Tava,Hard Anodised,Premium,,True,1230.0,0.5418424713352257,2,2022
+HW-CW-10082,Futura Non-Stick Dosa Tava 28cm,Cookware,Dosa Tava,Non-Stick,Standard,,False,900.0,0.47449737033908046,2,2022
+HW-CW-10083,Futura Non-Stick Dosa Tava 30cm,Cookware,Dosa Tava,Non-Stick,Standard,,False,1060.0,0.2978376983753207,2,2022
+HW-CW-10084,Futura Non-Stick Dosa Tava 33cm,Cookware,Dosa Tava,Non-Stick,Standard,,False,1300.0,0.5543140194467591,2,2020
+HW-CW-10085,Futura Non-Stick Frying Pan 22cm,Cookware,Frying Pan,Non-Stick,Standard,,False,950.0,0.3443939678995823,2,2022
+HW-CW-10086,Futura Non-Stick Frying Pan 24cm,Cookware,Frying Pan,Non-Stick,Standard,,False,1110.0,0.45909313175279765,2,2020
+HW-CW-10087,Futura Non-Stick Frying Pan 26cm,Cookware,Frying Pan,Non-Stick,Standard,,False,1270.0,0.2601676506976381,2,2024
+HW-CW-10088,Futura Hard Anodised Frying Pan 22cm,Cookware,Frying Pan,Hard Anodised,Premium,,True,1250.0,0.33068768093415846,2,2018
+HW-CW-10089,Futura Hard Anodised Frying Pan 24cm,Cookware,Frying Pan,Hard Anodised,Premium,,True,1410.0,0.37574239243053065,2,2023
+HW-CW-10090,Futura Hard Anodised Frying Pan 26cm,Cookware,Frying Pan,Hard Anodised,Premium,,True,1570.0,0.6130265895704372,2,2024
+HW-CW-10091,Futura Non-Stick Kadhai 24cm,Cookware,Kadhai,Non-Stick,Standard,,False,1300.0,0.4659364365206693,2,2024
+HW-CW-10092,Futura Non-Stick Kadhai 26cm,Cookware,Kadhai,Non-Stick,Standard,,False,1460.0,0.34151926619664896,2,2022
+HW-CW-10093,Futura Non-Stick Kadhai 28cm,Cookware,Kadhai,Non-Stick,Standard,,False,1620.0,0.5279139732158818,2,2023
+HW-CW-10094,Futura Hard Anodised Kadhai 24cm,Cookware,Kadhai,Hard Anodised,Premium,,True,1650.0,0.6218790609370293,2,2024
+HW-CW-10095,Futura Hard Anodised Kadhai 26cm,Cookware,Kadhai,Hard Anodised,Premium,,True,1810.0,0.3682534743350856,2,2024
+HW-CW-10096,Futura Hard Anodised Kadhai 28cm,Cookware,Kadhai,Hard Anodised,Premium,,True,1970.0,0.598584236075087,2,2023
+HW-CW-10097,Futura Non-Stick Saucepan 16cm,Cookware,Saucepan,Non-Stick,Standard,,False,750.0,0.33737617488673344,2,2023
+HW-CW-10098,Futura Non-Stick Saucepan 18cm,Cookware,Saucepan,Non-Stick,Standard,,False,910.0,0.6070235993959912,2,2022
+HW-CW-10099,Futura Non-Stick Saucepan 20cm,Cookware,Saucepan,Non-Stick,Standard,,False,1070.0,0.3797380084021096,2,2023
+HW-CW-10100,Hawkins Tri-Ply Saucepan 16cm,Cookware,Saucepan,Stainless Steel,Premium,,True,1500.0,0.39251913523078996,2,2018
+HW-CW-10101,Hawkins Tri-Ply Saucepan 18cm,Cookware,Saucepan,Stainless Steel,Premium,,True,1660.0,0.35885289975385415,2,2022
+HW-CW-10102,Hawkins Tri-Ply Saucepan 20cm,Cookware,Saucepan,Stainless Steel,Premium,,True,1820.0,0.42084311545050257,2,2023
+HW-CW-10103,Futura Non-Stick Handi 22cm,Cookware,Handi,Non-Stick,Standard,,False,1450.0,0.3910275425336676,2,2022
+HW-CW-10104,Futura Non-Stick Handi 24cm,Cookware,Handi,Non-Stick,Standard,,False,1610.0,0.25278085221247626,2,2022
+HW-CW-10105,Futura Hard Anodised Deep Fry Pan 24cm,Cookware,Deep Fry Pan,Hard Anodised,Premium,,True,1800.0,0.4169644012595116,2,2024
+HW-CW-10106,Futura Hard Anodised Deep Fry Pan 26cm,Cookware,Deep Fry Pan,Hard Anodised,Premium,,True,1960.0,0.5269744131561082,2,2020
+HW-CW-10107,Futura Hard Anodised Casserole 22cm,Cookware,Casserole,Hard Anodised,Premium,,True,2100.0,0.3850460685614512,2,2022
+HW-CW-10108,Futura Hard Anodised Casserole 24cm,Cookware,Casserole,Hard Anodised,Premium,,True,2260.0,0.3792811728083021,2,2018
+HW-CW-10109,Futura Hard Anodised Casserole 26cm,Cookware,Casserole,Hard Anodised,Premium,,True,2420.0,0.41153446842321634,2,2018
+HW-EL-10110,Futura Smart Electronic Kettle 1.5L,Electricals,Smart Kettle,Stainless Steel,Premium,,False,2890.0,0.15,2,2024
+HW-EL-10111,Futura Electronic Kettle 1.7L,Electricals,Kettle,Stainless Steel,Premium,,False,2190.0,0.15,2,2023
+HW-EL-10112,Hawkins Induction Cooktop 2000W,Electricals,Induction,Glass-top,Premium,,False,3490.0,0.15,2,2022
+HW-AC-10113,Hawkins Gasket Standard,Accessory,Gasket,Mixed,Standard,,False,140.0,0.85,0,2015
+HW-AC-10114,Hawkins Gasket Mini,Accessory,Gasket,Mixed,Standard,,False,110.0,0.85,0,2015
+HW-AC-10115,Hawkins Gasket Bigboy,Accessory,Gasket,Mixed,Standard,,False,220.0,0.85,0,2015
+HW-AC-10116,Hawkins Safety Valve,Accessory,Safety Valve,Mixed,Standard,,False,90.0,0.85,0,2015
+HW-AC-10117,Hawkins Vent Weight,Accessory,Vent Weight,Mixed,Standard,,False,80.0,0.85,0,2015
+HW-AC-10118,Hawkins Lid Handle,Accessory,Handle,Mixed,Standard,,False,180.0,0.85,0,2015
+HW-AC-10119,Hawkins Body Handle Set,Accessory,Handle,Mixed,Standard,,False,260.0,0.85,0,2015
+HW-AC-10120,Hawkins Repair Kit,Accessory,Repair Kit,Mixed,Standard,,False,450.0,0.85,0,2015
+HW-AC-10121,Hawkins Idli Stand 4-Plate,Accessory,Stand,Mixed,Standard,,False,340.0,0.85,0,2015
+HW-AC-10122,Hawkins Dish Set Separator,Accessory,Separator,Mixed,Standard,,False,280.0,0.85,0,2015
+HW-AC-10123,Pressure Cooker Grid,Accessory,Grid,Mixed,Standard,,False,150.0,0.85,0,2015

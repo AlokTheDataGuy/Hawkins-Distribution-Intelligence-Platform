@@ -1,0 +1,37 @@
+state_name,state_code,region,population_cr,gdp_per_capita_lakh,latitude,longitude,urban_pct,market_potential,market_share_pct
+Delhi,DL,North,2.0,4.5,28.61,77.21,97.5,2.65,2.59
+Punjab,PB,North,3.0,1.95,31.15,75.34,37.5,2.42,2.37
+Haryana,HR,North,2.9,3.1,29.06,76.09,35.0,2.7,2.64
+Himachal Pradesh,HP,North,0.7,2.4,31.1,77.17,10.0,1.15,1.12
+Uttarakhand,UK,North,1.1,2.3,30.07,79.02,30.5,1.38,1.35
+Jammu & Kashmir,JK,North,1.4,1.3,33.78,76.57,27.5,1.26,1.23
+Ladakh,LA,North,0.03,1.3,34.15,77.58,23.0,0.43,0.42
+Chandigarh,CH,North,0.12,3.4,30.73,76.78,97.0,1.19,1.16
+Maharashtra,MH,West,12.5,2.5,19.75,75.71,45.0,8.3,8.12
+Gujarat,GJ,West,7.0,2.85,22.26,71.19,43.0,5.1,4.99
+Rajasthan,RJ,West,8.1,1.5,27.02,74.21,25.0,5.34,5.22
+Goa,GA,West,0.16,4.7,15.3,74.12,62.5,1.57,1.54
+Dadra Nagar Haveli,DD,West,0.06,2.2,20.39,72.83,47.0,0.74,0.72
+Tamil Nadu,TN,South,8.0,2.65,11.13,78.66,48.5,5.64,5.51
+Karnataka,KA,South,6.7,2.85,15.32,75.71,38.7,4.91,4.8
+Andhra Pradesh,AP,South,5.3,2.1,15.91,79.74,29.5,3.84,3.75
+Telangana,TS,South,3.9,2.65,17.12,79.2,39.0,3.17,3.1
+Kerala,KL,South,3.5,2.8,10.85,76.27,47.5,2.99,2.92
+Puducherry,PY,South,0.13,2.4,11.94,79.83,68.0,0.87,0.85
+Lakshadweep,LD,South,0.007,1.8,10.57,72.64,78.0,0.62,0.61
+Andaman Nicobar,AN,South,0.04,2.2,11.74,92.66,37.7,0.72,0.7
+West Bengal,WB,East,9.5,1.45,22.99,87.86,32.0,6.17,6.03
+Odisha,OD,East,4.4,1.5,20.95,85.1,17.0,3.11,3.04
+Jharkhand,JH,East,3.4,1.1,23.61,85.28,24.0,2.39,2.34
+Bihar,BR,East,11.5,0.55,25.1,85.31,11.5,7.08,6.92
+Uttar Pradesh,UP,Central,20.0,0.85,26.85,80.95,22.0,12.28,12.01
+Madhya Pradesh,MP,Central,8.0,1.3,22.97,78.66,28.0,5.22,5.1
+Chhattisgarh,CG,Central,2.9,1.3,21.28,81.87,23.0,2.15,2.1
+Assam,AS,Northeast,3.4,1.1,26.2,92.94,14.5,2.38,2.33
+Tripura,TR,Northeast,0.4,1.55,23.94,91.99,26.0,0.73,0.71
+Meghalaya,ML,Northeast,0.3,0.9,25.47,91.37,20.0,0.47,0.46
+Manipur,MN,Northeast,0.3,0.85,24.66,93.91,30.0,0.46,0.45
+Nagaland,NL,Northeast,0.2,1.3,26.16,94.56,28.0,0.54,0.53
+Mizoram,MZ,Northeast,0.12,1.55,23.16,92.94,51.5,0.59,0.58
+Arunachal Pradesh,AR,Northeast,0.15,1.4,28.22,94.73,22.5,0.53,0.52
+Sikkim,SK,Northeast,0.07,3.7,27.53,88.51,25.0,1.18,1.15
