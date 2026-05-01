@@ -1,0 +1,47 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Render Blueprint for HDIP backend
+# Docs: https://render.com/docs/blueprint-spec
+#
+# This file lives at the repo ROOT (not inside backend/).
+# Render reads it when you create a "Blueprint" service.
+#
+# What this provisions:
+#   - Free-tier Python web service named "hdip-backend"
+#   - Singapore region (closest to India for low latency)
+#   - Auto-deploys on every push to main
+#   - Generates DB on first boot via start.sh
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+  - type: web
+    name: hdip-backend
+    runtime: python
+    plan: free
+    region: singapore
+    rootDir: backend
+    branch: main
+
+    # Install deps from BOTH backend (FastAPI) and scripts (pipeline)
+    # The pipeline runs on first boot to regenerate the database
+    buildCommand: |
+      pip install --upgrade pip
+      pip install -r requirements.txt
+      pip install -r ../scripts/requirements.txt
+
+    # start.sh handles DB bootstrap then launches uvicorn
+    startCommand: bash ../start.sh
+
+    # Health check — Render pings this to confirm the service is alive
+    healthCheckPath: /docs
+
+    autoDeploy: true
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: ALLOWED_ORIGINS
+        # UPDATE this with your real Vercel URL after frontend deploys
+        # Comma-separated, no spaces
+        value: "http://localhost:5173,https://hdip-frontend.vercel.app"
+      - key: PYTHONUNBUFFERED
+        value: "1"

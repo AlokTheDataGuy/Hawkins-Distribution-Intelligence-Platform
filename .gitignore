@@ -20,8 +20,8 @@ data/hawkins.db
 data/processed/
 
 # ── Trained model artifacts ───────────────────────────────────────────────────
-models/*.pkl
-models/*.parquet
+# models/*.pkl
+# models/*.parquet
 
 # ── OS / editor ───────────────────────────────────────────────────────────────
 .DS_Store
