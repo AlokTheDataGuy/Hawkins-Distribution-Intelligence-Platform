@@ -106,7 +106,7 @@ export default function AnomalyDetection() {
       )}
 
       {/* KPIs */}
-      <div className="grid grid-cols-4 gap-4 mb-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
         <KPICard label="Total Alerts"      value={String(allAlerts.length)} />
         <KPICard label="Critical"          value={String(criticalCount)} sub="Needs immediate action" />
         <KPICard label="Warnings"          value={String(warningCount)}  sub="Monitor closely" />

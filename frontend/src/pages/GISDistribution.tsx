@@ -178,7 +178,7 @@ export default function GISDistribution() {
       <PageHeader title="GIS Distribution" subtitle="Pan-India dealer footprint, factory locations, and white-space opportunities" />
 
       {/* Map */}
-      <div className="rounded-xl overflow-hidden border border-gray-200 mb-4" style={{ height: 500 }}>
+      <div className="rounded-xl overflow-hidden border border-gray-200 mb-4 h-64 sm:h-96 lg:h-[500px]">
         {!mapReady ? (
           <div className="h-full flex items-center justify-center"><Spinner /></div>
         ) : (
@@ -223,7 +223,7 @@ export default function GISDistribution() {
       </div>
 
       {/* White-space analysis */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ChartCard title="White-Space: Market Potential vs Active Dealers">
           {(whitespace as any[]).length ? (
             <ResponsiveContainer width="100%" height={300}>

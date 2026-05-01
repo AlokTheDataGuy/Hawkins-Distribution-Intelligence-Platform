@@ -33,7 +33,7 @@ export default function Executive() {
       <PageHeader title="Executive Overview" subtitle="Top-line KPIs and business trends — FY2024 to FY2026" />
 
       {/* KPIs */}
-      <div className="grid grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <KPICard label="Total Revenue (3Y)"  value={`₹${kpis.revenue_cr} Cr`} />
         <KPICard label="Units Sold"          value={`${(kpis.units_sold / 1e6).toFixed(2)}M`} />
         <KPICard label="Active Dealers"      value={kpis.active_dealers.toLocaleString()} />
@@ -41,8 +41,8 @@ export default function Executive() {
       </div>
 
       {/* Row 1: Revenue trend + Region breakdown */}
-      <div className="grid grid-cols-3 gap-4 mb-4">
-        <ChartCard title="Monthly Revenue Trend (₹ Cr)" className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+        <ChartCard title="Monthly Revenue Trend (₹ Cr)" className="lg:col-span-2">
           {monthly ? (
             <ResponsiveContainer width="100%" height={260}>
               <AreaChart data={monthly} margin={{ top: 4, right: 12, bottom: 0, left: 0 }}>
@@ -85,8 +85,8 @@ export default function Executive() {
       </div>
 
       {/* Row 2: Top SKUs + State table */}
-      <div className="grid grid-cols-3 gap-4 mb-6">
-        <ChartCard title="Top 10 SKUs by Revenue (₹ Cr)" className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-6">
+        <ChartCard title="Top 10 SKUs by Revenue (₹ Cr)" className="lg:col-span-2">
           {products ? (
             <ResponsiveContainer width="100%" height={280}>
               <BarChart data={products} layout="vertical" margin={{ top: 4, right: 20, bottom: 0, left: 160 }}>

@@ -79,7 +79,7 @@ export default function CompetitiveIntel() {
     <div>
       <PageHeader title="Competitive Intel" subtitle="Pricing posture vs TTK Prestige, Butterfly, Pigeon & Stove Kraft — 5.7K price snapshots" />
 
-      <div className="grid grid-cols-4 gap-4 mb-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
         <KPICard label="Competitors Tracked" value={String(kpis.competitors_tracked ?? 4)} />
         <KPICard label="SKUs Tracked"        value={String(kpis.skus_tracked ?? '—')} />
         <KPICard label="Pricing Posture"
@@ -92,8 +92,8 @@ export default function CompetitiveIntel() {
       </div>
 
       {/* Row 1: Trend + Posture bar */}
-      <div className="grid grid-cols-3 gap-4 mb-4">
-        <ChartCard title="Price Gap Trend — Hawkins vs Competitors (% gap)" className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+        <ChartCard title="Price Gap Trend — Hawkins vs Competitors (% gap)" className="lg:col-span-2">
           {filteredTrend.length ? (
             <ResponsiveContainer width="100%" height={260}>
               <LineChart data={filteredTrend} margin={{ top:8, right:20, bottom:0, left:0 }}>
@@ -190,7 +190,7 @@ export default function CompetitiveIntel() {
       </ChartCard>
 
       {/* Row 3: Vulnerable SKUs + Recommendations */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ChartCard title="Vulnerable SKUs (gap narrowing >2pp in last 90 days)">
           {vulnerable ? (
             <table className="w-full text-xs">

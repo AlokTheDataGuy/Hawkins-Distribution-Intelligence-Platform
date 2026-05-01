@@ -539,7 +539,7 @@ const PAGE_TITLES: Record<string, string> = {
   '/competitive-intel':  'Competitive Intel',
 }
 
-export default function Sidebar() {
+export default function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {
   const [collapsed, setCollapsed] = useState(false)
   const { pathname } = useLocation()
 
@@ -559,7 +559,7 @@ export default function Sidebar() {
 
   if (collapsed) {
     return (
-      <div className="w-8 bg-gray-50 border-r border-gray-200 flex items-start pt-3 justify-center flex-shrink-0">
+      <div className="hidden lg:flex w-8 bg-gray-50 border-r border-gray-200 items-start pt-3 justify-center flex-shrink-0">
         <button onClick={() => setCollapsed(false)} className="text-gray-400 hover:text-gray-600">
           <ChevronRight size={16} />
         </button>
@@ -568,14 +568,25 @@ export default function Sidebar() {
   }
 
   return (
-    <aside className="w-64 flex-shrink-0 bg-gray-50 border-r border-gray-200 overflow-y-auto flex flex-col">
+    <aside className={`
+      fixed inset-y-0 left-0 z-30 w-64 flex-shrink-0 bg-gray-50 border-r border-gray-200
+      overflow-y-auto flex flex-col
+      transform transition-transform duration-200 ease-in-out
+      ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}
+      lg:relative lg:translate-x-0 lg:z-auto
+    `}>
       <div className="p-4">
         {/* Header */}
         <div className="flex items-center justify-between mb-1">
           <img src="/logo.png" alt="Hawkins" className="h-14 w-14 object-contain" />
-          <button onClick={() => setCollapsed(true)} className="text-gray-400 hover:text-gray-600">
-            <ChevronLeft size={16} />
-          </button>
+          <div className="flex gap-1">
+            <button onClick={onClose} className="lg:hidden text-gray-400 hover:text-gray-600">
+              <ChevronLeft size={16} />
+            </button>
+            <button onClick={() => setCollapsed(true)} className="hidden lg:block text-gray-400 hover:text-gray-600">
+              <ChevronLeft size={16} />
+            </button>
+          </div>
         </div>
         <div className="text-[11px] text-gray-500 leading-snug pb-3">
           Distribution Intelligence Platform<br />

@@ -93,7 +93,7 @@ export default function DealerPerformance() {
         <>
           {loadingScored ? <Spinner /> : (
             <>
-              <div className="grid grid-cols-3 gap-4 mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                 {['A','B','C'].map(t => {
                   const group = (scored as any[]).filter(d => d.tier === t)
                   const avg   = group.length ? (group.reduce((s, d) => s + d.score, 0) / group.length).toFixed(1) : '—'
@@ -106,7 +106,7 @@ export default function DealerPerformance() {
                   )
                 })}
               </div>
-              <div className="grid grid-cols-2 gap-4 mb-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
                 <ChartCard title="Score Distribution by Tier">
                   <ResponsiveContainer width="100%" height={260}>
                     <BarChart data={scoreBuckets} margin={{ top:4, right:12, bottom:0, left:0 }}>
@@ -182,7 +182,7 @@ export default function DealerPerformance() {
         <>
           {loadingMovers ? <Spinner /> : (
             <>
-              <div className="grid grid-cols-4 gap-4 mb-4">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                 <KPICard label="Decliners (>30% drop)" value={String(decliners.length)} />
                 <KPICard label="Risers (>40% growth)"  value={String(risers.length)} />
               </div>
@@ -201,7 +201,7 @@ export default function DealerPerformance() {
                   </BarChart>
                 </ResponsiveContainer>
               </ChartCard>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <ChartCard title="Top Decliners (revenue fell >30%)">
                   <table className="w-full text-xs">
                     <thead><tr className="border-b border-gray-100">
@@ -252,7 +252,7 @@ export default function DealerPerformance() {
       {tab === 2 && (
         <>
           {loadingCohorts ? <Spinner /> : (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <ChartCard title="Avg Revenue per Dealer by Onboard Year (₹ Lakh)">
                 <ResponsiveContainer width="100%" height={300}>
                   <BarChart data={cohortChart} margin={{ top:4, right:12, bottom:0, left:0 }}>

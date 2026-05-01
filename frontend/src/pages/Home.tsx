@@ -51,7 +51,7 @@ export default function Home() {
       {isLoading || !data ? (
         <Spinner />
       ) : (
-        <div className="grid grid-cols-5 gap-4 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
           <KPICard label="Total Revenue"  value={`₹${data.revenue_cr} Cr`}        help="Gross sales across 3 years" />
           <KPICard label="Units Sold"     value={`${(data.units_sold / 1e6).toFixed(2)}M`} />
           <KPICard label="Transactions"   value={`${(data.transactions / 1e6).toFixed(2)}M`} />
@@ -63,8 +63,8 @@ export default function Home() {
       <div className="border-t border-gray-200 mb-6" />
 
       {/* Two-col: modules + architecture */}
-      <div className="grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="lg:col-span-2">
           <h2 className="text-base font-bold text-gray-800 mb-2">What this platform does</h2>
           <p className="text-sm text-gray-600 mb-3">
             Hawkins operates a complex <strong>9,379-dealer pan-India network</strong> across three

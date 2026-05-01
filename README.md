@@ -313,4 +313,4 @@ All facts about Hawkins are drawn from publicly available sources (annual report
 
 **Alok Deep** — Full-stack developer (MERN) building toward data science / analytics roles.
 
-[LinkedIn](https://www.linkedin.com/in/alokthedataguy/) · [Portfolio](#) · [Email](alokdeep9925@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/alokthedataguy/) · [Portfolio](https://www.alokthedataguy.in/) · [Email](alokdeep9925@gmail.com)

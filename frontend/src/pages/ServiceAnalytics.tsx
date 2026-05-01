@@ -79,7 +79,7 @@ export default function ServiceAnalytics() {
     <div>
       <PageHeader title="Service Analytics" subtitle="Warranty claims, resolution times, and quality risk SKUs — 45K claims across 140 service centres" />
 
-      <div className="grid grid-cols-4 gap-4 mb-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
         <KPICard label="Total Service Requests" value={kpis.total_requests?.toLocaleString() ?? '—'} />
         <KPICard label="Critical Cases"          value={kpis.critical?.toLocaleString() ?? '—'}
           sub={kpis.total_requests ? `${((kpis.critical / kpis.total_requests) * 100).toFixed(1)}% of total` : undefined} />
@@ -88,8 +88,8 @@ export default function ServiceAnalytics() {
       </div>
 
       {/* Row 1: Trend + Issue breakdown */}
-      <div className="grid grid-cols-3 gap-4 mb-4">
-        <ChartCard title="Monthly Service Requests by Severity" className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+        <ChartCard title="Monthly Service Requests by Severity" className="lg:col-span-2">
           {trendPivot.length ? (
             <ResponsiveContainer width="100%" height={240}>
               <AreaChart data={trendPivot} margin={{ top: 4, right: 12, bottom: 0, left: 0 }}>
@@ -170,7 +170,7 @@ export default function ServiceAnalytics() {
       </ChartCard>
 
       {/* Row 3: Resolution times + Quality risk */}
-      <div className="grid grid-cols-2 gap-4 mb-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
         <ChartCard title="Avg Resolution Days by Category">
           {catResolution.length ? (
             <ResponsiveContainer width="100%" height={220}>

@@ -73,7 +73,7 @@ export default function Forecasting() {
       {/* KPIs */}
       {isLoading || !fc ? <Spinner /> : (
         <>
-          <div className="grid grid-cols-4 gap-4 mb-5">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
             <KPICard label="SKU"                 value={fc.product_name.slice(0, 26)} />
             <KPICard label="Backtest sMAPE"       value={fc.mape != null ? `${fc.mape}%` : '—'}
               sub={fc.mape != null ? (fc.mape < 20 ? 'Good accuracy' : 'Moderate accuracy') : undefined} />
