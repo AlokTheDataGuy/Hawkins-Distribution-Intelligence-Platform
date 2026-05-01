@@ -274,21 +274,6 @@ hawkins-distribution-intelligence-platform/
 
 ---
 
-## Interview Talking Points
-
-**The 60-second opener:**
-> *"I researched Hawkins' actual business model — 9,379 dealers across three plants in Thane, Hoshiarpur, and Sathariya, 32% market share in pressure cookers, 16+ brand lines from Classic to Futura. I built an internal-style analytics platform that addresses the specific operational questions your IT team would face: dealer performance, regional demand forecasting, inventory health, warranty patterns, and competitive pricing. The synthetic data is calibrated to your published financials — ₹1,030 Cr FY24, ₹1,194 Cr FY25, with the 2% growth slowdown that ICRA flagged."*
-
-**Why this stands out:**
-- Built around Hawkins' actual operating reality — not a generic dashboard reskinned with a logo
-- Full-stack: FastAPI · React + TypeScript · SQLite warehouse
-- Real ML depth: SARIMA · Isolation Forest · RFM segmentation, with documented methodology
-- Mirrors an in-house IT culture: modular, documented, maintainable, runnable in five minutes
-
-Full interview prep — STAR answers, likely questions, numbers to memorise — lives in [`docs/INTERVIEW_PREP.md`](docs/INTERVIEW_PREP.md).
-
----
-
 ## Documentation
 
 | Doc | Purpose |
