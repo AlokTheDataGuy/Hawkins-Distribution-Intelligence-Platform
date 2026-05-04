@@ -4,8 +4,10 @@
 #
 # Strategy: start uvicorn immediately so Render's health check passes,
 # then build the DB in the background if it's missing.
-# The /docs health check endpoint never touches the DB, so it returns 200
-# right away. API endpoints become available once the pipeline finishes (~5 min).
+#
+# Raw CSVs are committed to git (data/raw/), so we only run the ETL step
+# (DuckDB streams from disk, ~50MB peak) — not the full data generation
+# pipeline (which uses 400MB+ of pandas DataFrames and causes OOM).
 # ─────────────────────────────────────────────────────────────────────────────
 set -uo pipefail
 
@@ -19,7 +21,7 @@ echo "▶ HDIP Boot Sequence"
 echo "  Working dir : $(pwd)"
 echo "  Python      : $(python --version 2>&1)"
 
-# ── 1. Database check — kick off pipeline in background if DB missing ─────────
+# ── 1. Database check — run ETL in background if DB missing ──────────────────
 if [ -f "$DB_PATH" ]; then
     db_size=$(stat -c%s "$DB_PATH" 2>/dev/null || stat -f%z "$DB_PATH" 2>/dev/null || echo 0)
 else
@@ -27,10 +29,10 @@ else
 fi
 
 if [ "$db_size" -lt "$MIN_DB_SIZE" ]; then
-    echo "▶ Database missing — running pipeline in background (~5-8 min)..."
-    python run_pipeline.py --skip-ml &
+    echo "▶ Database missing — running ETL from committed CSVs (~1-2 min)..."
+    (python scripts/etl/load_to_sqlite.py && python scripts/etl/optimize_views.py && echo "✓ Database ready") &
 else
-    echo "✓ Database found: $(($db_size / 1024 / 1024)) MB — skipping regeneration"
+    echo "✓ Database found: $(($db_size / 1024 / 1024)) MB — skipping ETL"
 fi
 
 # ── 2. Start FastAPI immediately so health check passes ──────────────────────
