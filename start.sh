@@ -2,15 +2,12 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # Render boot script for HDIP backend
 #
-# Responsibilities:
-#   1. Ensure the SQLite database exists (regenerate if missing — first boot)
-#   2. Start FastAPI via uvicorn on the port Render assigns
-#
-# The DB is NOT committed to git (it's 192 MB), so on a fresh deploy we
-# regenerate it from synthetic data scripts. Subsequent deploys keep the
-# DB on Render's persistent disk if attached, OR regenerate it (~5-8 min).
+# Strategy: start uvicorn immediately so Render's health check passes,
+# then build the DB in the background if it's missing.
+# The /docs health check endpoint never touches the DB, so it returns 200
+# right away. API endpoints become available once the pipeline finishes (~5 min).
 # ─────────────────────────────────────────────────────────────────────────────
-set -euo pipefail
+set -uo pipefail
 
 # Render runs this from rootDir (= backend/), so we step up to repo root
 cd ..
@@ -22,7 +19,7 @@ echo "▶ HDIP Boot Sequence"
 echo "  Working dir : $(pwd)"
 echo "  Python      : $(python --version 2>&1)"
 
-# ── 1. Database check ────────────────────────────────────────────────────────
+# ── 1. Database check — kick off pipeline in background if DB missing ─────────
 if [ -f "$DB_PATH" ]; then
     db_size=$(stat -c%s "$DB_PATH" 2>/dev/null || stat -f%z "$DB_PATH" 2>/dev/null || echo 0)
 else
@@ -30,15 +27,13 @@ else
 fi
 
 if [ "$db_size" -lt "$MIN_DB_SIZE" ]; then
-    echo "▶ Database missing or undersized ($(($db_size / 1024 / 1024)) MB)"
-    echo "▶ Running data pipeline — skipping ML (models are pre-built in git)..."
-    python run_pipeline.py --skip-ml
-    echo "✓ Pipeline complete"
+    echo "▶ Database missing — running pipeline in background (~5-8 min)..."
+    python run_pipeline.py --skip-ml &
 else
     echo "✓ Database found: $(($db_size / 1024 / 1024)) MB — skipping regeneration"
 fi
 
-# ── 2. Start FastAPI ─────────────────────────────────────────────────────────
+# ── 2. Start FastAPI immediately so health check passes ──────────────────────
 echo "▶ Starting FastAPI on port ${PORT:-8000}..."
 cd backend
 exec uvicorn main:app --host 0.0.0.0 --port "${PORT:-8000}"
