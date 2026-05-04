@@ -8,7 +8,7 @@
 #
 # The DB is NOT committed to git (it's 192 MB), so on a fresh deploy we
 # regenerate it from synthetic data scripts. Subsequent deploys keep the
-# DB on Render's persistent disk if attached, OR regenerate it (~2-3 min).
+# DB on Render's persistent disk if attached, OR regenerate it (~5-8 min).
 # ─────────────────────────────────────────────────────────────────────────────
 set -euo pipefail
 
@@ -31,8 +31,8 @@ fi
 
 if [ "$db_size" -lt "$MIN_DB_SIZE" ]; then
     echo "▶ Database missing or undersized ($(($db_size / 1024 / 1024)) MB)"
-    echo "▶ Running full pipeline — this takes ~2-3 minutes on first boot..."
-    python run_pipeline.py
+    echo "▶ Running data pipeline — skipping ML (models are pre-built in git)..."
+    python run_pipeline.py --skip-ml
     echo "✓ Pipeline complete"
 else
     echo "✓ Database found: $(($db_size / 1024 / 1024)) MB — skipping regeneration"
