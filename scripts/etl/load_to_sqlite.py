@@ -40,6 +40,10 @@ TABLES = [
     ("fact_competitor_pricing","fact_competitor_pricing.csv"),
 ]
 
+# Tables too large to load into RAM at once on low-memory hosts (e.g. Render free 512MB)
+CHUNKED_TABLES = {"fact_sales"}
+CHUNK_SIZE = 50_000
+
 # Indexes — critical for dashboard query performance
 INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_sales_date    ON fact_sales(transaction_date);",
@@ -172,9 +176,19 @@ def load():
     
     # Load tables
     for tbl, fname in TABLES:
-        df = pd.read_csv(RAW / fname)
-        df.to_sql(tbl, conn, index=False, if_exists="replace")
-        print(f"  ✓ Loaded {tbl}: {len(df):,} rows")
+        csv_path = RAW / fname
+        if tbl in CHUNKED_TABLES:
+            total = 0
+            first = True
+            for chunk in pd.read_csv(csv_path, chunksize=CHUNK_SIZE):
+                chunk.to_sql(tbl, conn, index=False, if_exists="replace" if first else "append")
+                first = False
+                total += len(chunk)
+            print(f"  ✓ Loaded {tbl}: {total:,} rows")
+        else:
+            df = pd.read_csv(csv_path)
+            df.to_sql(tbl, conn, index=False, if_exists="replace")
+            print(f"  ✓ Loaded {tbl}: {len(df):,} rows")
     
     # Indexes
     cur = conn.cursor()
