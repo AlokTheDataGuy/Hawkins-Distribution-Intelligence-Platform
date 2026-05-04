@@ -42,6 +42,6 @@ services:
       - key: ALLOWED_ORIGINS
         # UPDATE this with your real Vercel URL after frontend deploys
         # Comma-separated, no spaces
-        value: "http://localhost:5173,https://hawkins-distribution-platform.vercel.app"
+        value: "http://localhost:5173,https://hawkins-distribution-intelligence.vercel.app"
       - key: PYTHONUNBUFFERED
         value: "1"
