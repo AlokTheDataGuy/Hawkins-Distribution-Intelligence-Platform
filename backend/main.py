@@ -1,12 +1,19 @@
 import os
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
+from db import DBNotReady
 from routers import executive, gis, dealers, forecasting, anomalies, service, competitive
 
 app = FastAPI(title="HDIP API", version="1.0.0")
+
+
+@app.exception_handler(DBNotReady)
+async def db_not_ready_handler(request: Request, exc: DBNotReady):
+    return JSONResponse(status_code=503, content={"detail": str(exc)})
 
 _origins = os.environ.get(
     "ALLOWED_ORIGINS",
