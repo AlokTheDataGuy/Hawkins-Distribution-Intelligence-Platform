@@ -20,7 +20,7 @@ def dormancy():
     rows = query_rows("""
         SELECT dd.dealer_id, dd.dealer_name, dd.tier, dd.region, dd.state_name,
                MAX(fs.transaction_date) AS last_txn,
-               CAST(julianday('now') - julianday(MAX(fs.transaction_date)) AS INTEGER) AS days_inactive
+               datediff('day', MAX(fs.transaction_date), current_date) AS days_inactive
         FROM dim_dealers dd
         JOIN fact_sales fs ON fs.dealer_id = dd.dealer_id
         WHERE dd.is_active = 1 AND dd.tier IN ('A', 'B')

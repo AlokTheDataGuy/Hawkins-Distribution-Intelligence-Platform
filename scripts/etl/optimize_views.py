@@ -1,22 +1,21 @@
 """
-Optimization step: Materialize the v_state_summary view as a real table.
-The original view used correlated subqueries which were slow on large fact_sales.
+Optimization step: Materialize v_state_summary as a real table.
+The view version used correlated subqueries; this pre-computes it with joins.
 Run AFTER load_to_sqlite.py.
 """
-import sqlite3
+import duckdb
 from pathlib import Path
 
 DB = Path(__file__).resolve().parent.parent.parent / "data" / "hawkins.db"
 
 
 def materialize():
-    conn = sqlite3.connect(DB)
-    cur = conn.cursor()
-    
-    # Drop the slow view, replace with a materialized table
-    cur.execute("DROP VIEW IF EXISTS v_state_summary;")
-    
-    cur.execute("""
+    conn = duckdb.connect(str(DB))
+
+    conn.execute("DROP VIEW IF EXISTS v_state_summary;")
+    conn.execute("DROP TABLE IF EXISTS v_state_summary;")
+
+    conn.execute("""
         CREATE TABLE v_state_summary AS
         SELECT
             st.state_code,
@@ -43,22 +42,18 @@ def materialize():
         LEFT JOIN (
             SELECT d.state_code,
                    ROUND(SUM(s.gross_amount), 2) AS total_revenue_inr,
-                   SUM(s.quantity)              AS total_units
+                   SUM(s.quantity)               AS total_units
             FROM fact_sales s JOIN dim_dealers d ON s.dealer_id = d.dealer_id
             GROUP BY d.state_code
         ) s ON st.state_code = s.state_code;
     """)
-    
-    cur.execute("CREATE INDEX idx_state_summary_code ON v_state_summary(state_code);")
-    
-    # Run ANALYZE so query planner has stats
-    cur.execute("ANALYZE;")
-    
-    conn.commit()
-    rows = cur.execute("SELECT COUNT(*) FROM v_state_summary").fetchone()[0]
-    sample = cur.execute("SELECT state_name, total_revenue_inr FROM v_state_summary ORDER BY total_revenue_inr DESC LIMIT 3").fetchall()
+
+    conn.execute("CREATE INDEX idx_state_summary_code ON v_state_summary(state_code);")
+
+    rows   = conn.execute("SELECT COUNT(*) FROM v_state_summary").fetchone()[0]
+    sample = conn.execute("SELECT state_name, total_revenue_inr FROM v_state_summary ORDER BY total_revenue_inr DESC LIMIT 3").fetchall()
     conn.close()
-    
+
     print(f"  ✓ Materialized v_state_summary: {rows} rows")
     print(f"  ✓ Top 3 by revenue: {sample}")
 

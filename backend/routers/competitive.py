@@ -33,7 +33,7 @@ def gap_trend(competitors: str = "All", categories: str = "All"):
         params.extend(cat_list)
 
     return query_rows(f"""
-        SELECT substr(cp.snapshot_date, 1, 7) AS month,
+        SELECT strftime(cp.snapshot_date, '%Y-%m') AS month,
                cp.competitor,
                ROUND(AVG(cp.price_gap_pct), 2) AS avg_gap_pct
         FROM fact_competitor_pricing cp
@@ -88,9 +88,9 @@ def sku_heatmap():
 def vulnerable_skus():
     rows = query_rows("""
         SELECT p.product_name, cp.competitor,
-               ROUND(AVG(CASE WHEN cp.snapshot_date < date('now', '-90 days')
+               ROUND(AVG(CASE WHEN cp.snapshot_date < current_date - INTERVAL 90 DAYS
                               THEN cp.price_gap_pct END), 1) AS older_gap,
-               ROUND(AVG(CASE WHEN cp.snapshot_date >= date('now', '-90 days')
+               ROUND(AVG(CASE WHEN cp.snapshot_date >= current_date - INTERVAL 90 DAYS
                               THEN cp.price_gap_pct END), 1) AS recent_gap
         FROM fact_competitor_pricing cp
         JOIN dim_products p ON cp.product_id = p.product_id

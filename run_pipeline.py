@@ -19,7 +19,7 @@ STEPS = [
     ("3/7 Generating dealer network", "scripts/data_generation/generate_network.py"),
     ("4/7 Generating sales fact",     "scripts/data_generation/generate_sales.py"),
     ("5/7 Generating aux tables",     "scripts/data_generation/generate_aux_tables.py"),
-    ("6/7 ETL → SQLite",              "scripts/etl/load_to_sqlite.py"),
+    ("6/7 ETL → DuckDB",              "scripts/etl/load_to_sqlite.py"),
     ("7/7 Optimize views",            "scripts/etl/optimize_views.py"),
 ]
 

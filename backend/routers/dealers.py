@@ -55,11 +55,11 @@ def movers():
     rows = query_rows("""
         SELECT fs.dealer_id, dd.dealer_name, dd.tier, dd.region,
                ROUND(SUM(CASE
-                   WHEN fs.transaction_date >= date('now', '-90 days')
+                   WHEN fs.transaction_date >= current_date - INTERVAL 90 DAYS
                    THEN fs.gross_amount ELSE 0 END) / 1e5, 2) AS rev_last90,
                ROUND(SUM(CASE
-                   WHEN fs.transaction_date >= date('now', '-180 days')
-                    AND fs.transaction_date <  date('now', '-90 days')
+                   WHEN fs.transaction_date >= current_date - INTERVAL 180 DAYS
+                    AND fs.transaction_date <  current_date - INTERVAL 90 DAYS
                    THEN fs.gross_amount ELSE 0 END) / 1e5, 2) AS rev_prior90
         FROM fact_sales fs
         JOIN dim_dealers dd ON fs.dealer_id = dd.dealer_id
@@ -76,7 +76,7 @@ def movers():
 @router.get("/cohorts")
 def cohorts():
     return query_rows("""
-        SELECT CAST(strftime('%Y', dd.onboarded_date) AS INTEGER) AS onboard_year,
+        SELECT year(dd.onboarded_date) AS onboard_year,
                dd.tier,
                COUNT(dd.dealer_id) AS dealer_count,
                ROUND(AVG(COALESCE(vdp.total_revenue_inr, 0)) / 1e5, 2) AS avg_revenue_lakh
@@ -91,7 +91,7 @@ def cohorts():
 @router.get("/{dealer_id}/monthly")
 def dealer_monthly(dealer_id: str):
     return query_rows("""
-        SELECT substr(transaction_date, 1, 7) AS month,
+        SELECT strftime(transaction_date, '%Y-%m') AS month,
                ROUND(SUM(gross_amount) / 1e5, 2) AS revenue_lakh,
                COUNT(*) AS transactions
         FROM fact_sales

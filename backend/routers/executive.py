@@ -7,7 +7,7 @@ router = APIRouter()
 @router.get("/monthly-revenue")
 def monthly_revenue():
     return query_rows("""
-        SELECT substr(transaction_date, 1, 7) AS month,
+        SELECT strftime(transaction_date, '%Y-%m') AS month,
                COUNT(*) AS transactions,
                SUM(quantity) AS units,
                ROUND(SUM(gross_amount) / 1e7, 3) AS revenue_cr

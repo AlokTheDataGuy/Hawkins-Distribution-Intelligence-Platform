@@ -5,7 +5,7 @@ router = APIRouter()
 
 BASE_QUERY = """
     SELECT sr.request_id, sr.issue_type, sr.severity, sr.status,
-           substr(sr.request_date, 1, 7) AS month,
+           strftime(sr.request_date, '%Y-%m') AS month,
            sr.resolution_days, sr.cost_inr, sr.is_under_warranty,
            p.product_name, p.category, p.sub_category,
            ds.state_name, ds.region
@@ -31,7 +31,7 @@ def kpis():
 @router.get("/monthly-trend")
 def monthly_trend():
     return query_rows("""
-        SELECT substr(request_date, 1, 7) AS month,
+        SELECT strftime(request_date, '%Y-%m') AS month,
                severity,
                COUNT(*) AS count
         FROM fact_service_requests
